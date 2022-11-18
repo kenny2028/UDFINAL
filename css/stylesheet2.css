@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  font-family: 'David Libre', serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  padding: 1.3em 0;
+}
+
+h2 {font-size:1.25em;}
+
+header,
+nav,
+main,
+aside,
+footer {
+  padding: 1.5em;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+section image {
+  width: inherit;
+}
+
+section h3 {
+  margin-top: 20px;
+  color: rgb(127, 50, 54);
+  font-size: 18px;
+}
+
+section h2 {
+  color: rgb(127, 50, 54);
+  font-size: 22px;
+}
+
+section p {
+  font-size: 15px;
+}
+
+
+
+
+footer h2,h3 {
+  color: white;
+}
+
+footer p {
+  color: white;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logoimg {
+  width: 300px;
+  object-fit: fill;
+}
+
+.Decorativeimage {
+  margin-top: 40px;
+}
+
+.ownerImage {
+  margin-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+section p {
+  text-align: center;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 27px;
+}
+
+main h3 {
+  text-align: center;
+  color: black;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 100px;
+}
+
+
+.button {
+  margin-top:50px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns:
+   2fr       2fr;
+  grid-template-areas:
+  "heady     heady"
+  "navvy     navvy"
+  "asidetop  asidetop"
+  "aside1    mainy"
+  "aside1    mainy"
+  "footy     footy"
+}
+
+
+
+header {grid-area: heady; background:rgb(255, 255, 255);}
+nav {grid-area: navvy; background:rgb(255, 255, 255);}
+
+article {grid-area: asidetop; background-color: white; width: 100%; flex-flow:   display: flex; flex-flow: row nowrap;}
+
+main {grid-area: mainy; background: rgb(255, 255, 255); max-height: 100%;}
+#aside1 {grid-area: aside1; background: rgb(255, 255, 255);}
+#aside2 {grid-area: aside2; background: rgb(255, 255, 255);}
+footer {grid-area: footy; background: rgb(127, 50, 54);}
+
+
+
+
+.imgwrapper {
+  text-align: center;
+  width: 100%;
+  background: rgb(255, 255, 255);
+}
+
+.textwrapper {
+  text-align: center;
+  width: 100%;
+  background: rgb(255, 255, 255);
+}
+
+.socialswrapper {
+  text-align: center;
+  width: inherit;
+}
+
+
+
+.fa {
+  padding: 100px;
+  font-size: 50px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+
+article p {
+  color: black;
+  font-size: 100px;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+nav a{
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+}
+
+
+nav ul li {
+  list-style: none
+}
+
+@media screen
+  and (min-width: 641px)
+  and (max-width: 900px)  {
+.container {
+grid-template-columns:
+   1fr 1fr;
+grid-template-areas:
+  "heady heady"
+  "navvy navvy"
+  "asidetop  asidetop"
+  "aside1 mainy"
+  "aside1 mainy"
+  "footy footy";
+}
+}
+
+@media screen
+  and (max-width: 640px)  {
+.container {
+grid-template-columns:
+   1fr;
+grid-template-areas:
+  "heady"
+  "navvy"
+  "asidetop"
+  "mainy"
+  "aside2"
+  "aside1"
+  "footy";
+}
+nav ul {
+  flex-flow: column nowrap;
+  text-align: center;
+}
+nav ul li a {
+  display: block;
+  padding: 10px 5px;
+  margin: 5px;
+  background: white;
+
+}
+nav a{
+  text-decoration: none;
+}
+
+
+
+
+}
